@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd ../.. && npx prisma generate --schema=packages/database/prisma/schema.prisma && pnpm turbo run build --filter=@verita/work",
+  "buildCommand": "cd ../.. && pnpm --filter=@verita/database exec prisma generate && pnpm turbo run build --filter=@verita/work",
   "installCommand": "cd ../.. && pnpm install",
   "outputDirectory": ".next"
 }
