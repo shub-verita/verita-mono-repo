@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowLeft,
   Upload,
@@ -133,9 +134,13 @@ export default function ApplyPage({ params }: { params: { slug: string } }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">V</span>
-              </div>
+              <Image
+                src="/verita-logo.png"
+                alt="Verita AI"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="font-semibold text-xl">Verita AI</span>
             </Link>
           </div>

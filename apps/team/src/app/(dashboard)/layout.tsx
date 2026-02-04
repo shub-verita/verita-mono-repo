@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
 import {
   Users,
@@ -31,9 +32,13 @@ export default function DashboardLayout({
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-8">
               <Link href="/" className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">V</span>
-                </div>
+                <Image
+                  src="/verita-logo.png"
+                  alt="Verita AI"
+                  width={32}
+                  height={32}
+                  className="rounded-lg"
+                />
                 <span className="font-semibold text-xl">Verita AI</span>
                 <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
                   Team
