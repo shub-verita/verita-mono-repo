@@ -9,6 +9,9 @@ const nextConfig = {
     // Linting done separately, skip during build to save memory
     ignoreDuringBuilds: true,
   },
+  outputFileTracingIncludes: {
+    "/*": ["./node_modules/.prisma/**/*"],
+  },
 };
 
 export default nextConfig;
