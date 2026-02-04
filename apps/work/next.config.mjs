@@ -1,3 +1,5 @@
+import path from "path";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: ["@verita/database", "@verita/auth", "@verita/shared"],
@@ -9,8 +11,8 @@ const nextConfig = {
     // Linting done separately, skip during build to save memory
     ignoreDuringBuilds: true,
   },
-  outputFileTracingIncludes: {
-    "/*": ["./node_modules/.prisma/**/*"],
+  experimental: {
+    outputFileTracingRoot: path.join(process.cwd(), "../../"),
   },
 };
 

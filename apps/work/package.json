@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.7.0",
+    "@prisma/client": "^5.22.0",
     "@verita/auth": "workspace:*",
     "@verita/database": "workspace:*",
     "@verita/shared": "workspace:*",
