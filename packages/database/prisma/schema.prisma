@@ -204,6 +204,12 @@ model Application {
   interviewScore     Int?
   interviewCompletedAt DateTime?
 
+  // AI Resume Screening
+  aiScore            Int?
+  aiSummary          String?           @db.Text
+  aiStrengths        String[]
+  aiWeaknesses       String[]
+
   // Timestamps
   createdAt          DateTime          @default(now())
   updatedAt          DateTime          @updatedAt

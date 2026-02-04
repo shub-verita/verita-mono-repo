@@ -6,12 +6,13 @@ import {
   FolderKanban,
   Clock,
   DollarSign,
-  LayoutDashboard,
+  FileText,
 } from "lucide-react";
 
 const navItems = [
   { href: "/contractors", label: "Contractors", icon: Users },
   { href: "/jobs", label: "Jobs", icon: Briefcase },
+  { href: "/applications", label: "Applications", icon: FileText },
   { href: "/projects", label: "Projects", icon: FolderKanban },
   { href: "/hours/pending", label: "Hours", icon: Clock },
   { href: "/payments/process", label: "Payments", icon: DollarSign },
