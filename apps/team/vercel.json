@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd ../.. && pnpm turbo run build --filter=team",
+  "buildCommand": "cd ../.. && pnpm turbo run build --filter=@verita/team",
   "installCommand": "cd ../.. && pnpm install",
   "outputDirectory": ".next"
 }
